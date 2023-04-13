@@ -3,9 +3,11 @@
 <head>
 	<meta charset="UTF-8" />
 	<title>Labb 1</title>
-	<link href="css/font-awesome.css" rel="stylesheet" type="text/css" />
-	<link href="css/bootstrap.css" rel="stylesheet" type="text/css" />
-	<link href="css/style.css" rel="stylesheet" type="text/css" />
+
+<?php
+wp_head()
+?>
+
 	<script src="js/jquery.js"></script>
 </head>
 <body>
