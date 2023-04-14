@@ -1,4 +1,26 @@
 <?php
+//Lägger till dynamisk titel
+function labb1viola_theme_support(){
+    add_theme_support('title-tag');
+    add_theme_support('post-thumbnails');
+}
+
+add_action('after_setup_theme', 'labb1viola_theme_support');
+
+function labb1_menus() {
+
+    $locations = array(
+        'primary' => "Primary Header Menu",
+        'footer' => "Footer Menu",
+        'sidebar' => "Sidebar Menu"
+    );
+
+    register_nav_menus($locations);
+};
+
+add_action('init','labb1_menus');
+
+
 
 function viola_register_styles() {
 
