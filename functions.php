@@ -3,6 +3,7 @@
 function labb1viola_theme_support(){
     add_theme_support('title-tag');
     add_theme_support('post-thumbnails');
+    add_theme_support('widgets');
 }
 
 add_action('after_setup_theme', 'labb1viola_theme_support');
@@ -43,3 +44,16 @@ function viola_register_scripts() {
 add_action( 'wp_enqueue_scripts', 'viola_register_scripts');
 
 ?>
+
+function labb1_sidebars() {
+
+    register_sidebar(array(
+        'name' => 'Main Sidebar',
+        'id' => 'main-sidebar',
+        'before-title' => '<h2>',
+        'after-title' => '</h2>'
+    )
+    );
+}
+
+add_action('widgets_init', 'labb1_sidebars');

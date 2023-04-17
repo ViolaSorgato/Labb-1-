@@ -40,7 +40,7 @@
 				</div>
 			</div>
 		</header>
-
+<!-- 
 		<div class="mobile-search">
 			<form id="searchform" class="searchform">
 				<div>
@@ -49,7 +49,7 @@
 					<input type="submit" value="Sök" />
 				</div>
 			</form>
-		</div>
+		</div> -->
 
 		<nav id="nav">
 			<div class="container">
