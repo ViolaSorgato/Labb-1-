@@ -1,5 +1,5 @@
 <?php
-//Lägger till dynamisk titel
+//Adding support for certain functionalities, title, images and widgets.
 function labb1viola_theme_support(){
     add_theme_support('title-tag');
     add_theme_support('post-thumbnails');
@@ -36,7 +36,8 @@ function labb1_menus() {
     $locations = array(
         'primary' => "Primary Header Menu",
         'footer' => "Footer Menu",
-        'sidebar' => "Sidebar Menu"
+        'sidebar' => "Sidebar Menu",
+        'undersida' => "Undersida Menu"
     );
 
     register_nav_menus($locations);

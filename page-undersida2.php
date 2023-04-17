@@ -1,20 +1,32 @@
 <?php
   get_header();
 ?>
-
+		<main>
+			<section>
+				<div class="container">
+					<div class="row">
+						<div id="primary" class="col-xs-12 col-md-9 col-md-push-3">
+						<h1><?php the_title(); ?></h1>
+						<p><?php the_content(); ?></p>
+						</div>
+						<aside id="secondary" class="col-xs-12 col-md-3 col-md-pull-9">
 <?php
-     if( have_posts() ){
+wp_nav_menu(
+    array(
+        'menu' => 'undersida',
+		'menu_class' => 'side-menu',
+        'container' => '',
+        'theme_location' => 'undersida',
+    ));
 
-		while( have_posts() ){
-
-			the_post();
+?>
+						</aside>
+					</div>
+				</div>
+			</section>
+		</main>
 			
-            get_template_part('template-parts/content', 'page');
-		}
-
-	 }
-	 ?>
-						
 <?php
 get_footer();
 ?>
+	
