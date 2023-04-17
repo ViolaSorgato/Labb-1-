@@ -8,6 +8,29 @@ function labb1viola_theme_support(){
 
 add_action('after_setup_theme', 'labb1viola_theme_support');
 
+function labb1_sidebars() {
+
+    register_sidebar(array(
+        'name' => 'Sidebarwidget',
+        'description' => 'A simple sidebar',
+        'id' => 'sidebarwidget',
+        'before-title' => '<h2>',
+        'after-title' => '</h2>'
+    ));
+
+    register_sidebar( array(
+        'name' => 'Footerwidget',
+        'description' => 'Widget for footer',
+        'id' => 'footerwidget',
+        'before-title' => '<h2>',
+        'after-title' => '</h2>'
+    ));
+}
+
+add_action('widgets_init', 'labb1_sidebars');
+
+
+
 function labb1_menus() {
 
     $locations = array(
@@ -43,17 +66,7 @@ function viola_register_scripts() {
 
 add_action( 'wp_enqueue_scripts', 'viola_register_scripts');
 
+
+
+
 ?>
-
-function labb1_sidebars() {
-
-    register_sidebar(array(
-        'name' => 'Main Sidebar',
-        'id' => 'main-sidebar',
-        'before-title' => '<h2>',
-        'after-title' => '</h2>'
-    )
-    );
-}
-
-add_action('widgets_init', 'labb1_sidebars');

@@ -4,6 +4,9 @@
 <meta charset="UTF-8" />
 <title><?php wp_title(); ?></title>
 
+<!-- SKA DETTA VARA MED? -->
+<link href="<?php echo get_stylesheet_uri(); ?>" >  
+
 <?php wp_head() ?>
 </head>
 
@@ -23,33 +26,12 @@
 <?php get_search_form(); ?>
 
 
-						<!-- <form id="searchform" class="searchform">
-							<div>
-								<label class="screen-reader-text">Sök efter:</label>
-								<input type="text" />
-								<input type="submit" value="Sök" />
-							</div>
-						</form>
-					</div>
-					<div class="col-xs-4 text-right visible-xs">
-						<div class="mobile-menu-wrap">
-							<i class="fa fa-search"></i>
-							<i class="fa fa-bars menu-icon"></i> -->
 						</div>
 					</div>
 				</div>
 			</div>
 		</header>
-<!-- 
-		<div class="mobile-search">
-			<form id="searchform" class="searchform">
-				<div>
-					<label class="screen-reader-text">Sök efter:</label>
-					<input type="text" />
-					<input type="submit" value="Sök" />
-				</div>
-			</form>
-		</div> -->
+
 
 		<nav id="nav">
 			<div class="container">

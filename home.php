@@ -12,6 +12,9 @@
 
 <?php endwhile; endif; ?>
 
+
+<!-- PAGINERING SER INTE UT SOM I MOCKUP, HUR LÄGGER JAG TILL CSS klass ? -->
+
 <nav class="navigation pagination"><?php echo the_posts_pagination(); ?> </nav>
 
 </div>
