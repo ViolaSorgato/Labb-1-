@@ -1,3 +1,6 @@
+<!-- Mallfil till loop
+     Innehåller bild, titel, datum, författare med länk, kategori, excerpt -->
+
 <article>
 	<?php the_post_thumbnail('full'); ?>
     <h2 class="title">

@@ -1,13 +1,16 @@
 <?php
-//Adding support for certain functionalities, title, images and widgets.
+
+// Lägger till supporten till extra funktioner, tex dynamisk titel, bilder, sidgetar
 function labb1viola_theme_support(){
     add_theme_support('title-tag');
     add_theme_support('post-thumbnails');
     add_theme_support('widgets');
 }
 
+// Hook
 add_action('after_setup_theme', 'labb1viola_theme_support');
 
+// Registrerar 4 widgetar till sidebar och 3 till footer samt några inställningar
 function labb1_sidebars() {
 
     register_sidebar(array(
@@ -71,10 +74,11 @@ function labb1_sidebars() {
     ));
 }
 
+// Hook
 add_action('widgets_init', 'labb1_sidebars');
 
 
-
+// Lägger till meny funktion i Wordpress och specifierar vilka menyer som finns
 function labb1_menus() {
 
     $locations = array(
@@ -87,10 +91,11 @@ function labb1_menus() {
     register_nav_menus($locations);
 };
 
+// Hook
 add_action('init','labb1_menus');
 
 
-
+// Registrera och köa stylesheet (+ Bootstrap och Fontawesome) så att de laddas korrekt
 function viola_register_styles() {
 
     $version = wp_get_theme()->get('Version');
@@ -100,8 +105,10 @@ function viola_register_styles() {
 
 }
 
+// Hook
 add_action( 'wp_enqueue_scripts', 'viola_register_styles');
 
+// Registrera och köa js och jquery så att de laddas korrekt
 function viola_register_scripts() {
 
     wp_enqueue_script('labb-jquery', get_template_directory_uri()."/assets/js/jquery.js", array(), '1.0', true);
@@ -109,6 +116,7 @@ function viola_register_scripts() {
 
 }
 
+// Hook
 add_action( 'wp_enqueue_scripts', 'viola_register_scripts');
 
 ?>

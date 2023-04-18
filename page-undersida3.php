@@ -1,6 +1,8 @@
-<?php
-  get_header();
-?>
+<!-- Mallsida till Undersida 3
+Innehåll: titel och text-->
+
+<?php get_header(); ?>
+
 		<main>
 			<section>
 				<div class="container">
@@ -14,6 +16,4 @@
 			</section>
 		</main>
 			
-<?php
-get_footer();
-?>
+<?php get_footer(); ?>

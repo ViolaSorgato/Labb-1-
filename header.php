@@ -15,14 +15,17 @@
 		<header id="header">
 			<div class="container">
 				<div class="row">
+<!-- Lägger till dynamisk logo -->
 					<div class="col-xs-8 col-sm-6">
 					    <a class="logo" href="<?php echo home_url(); ?>"><?php bloginfo('name'); ?></a>
 					</div>
 
+<!-- Dynamisk sökfält som leder till söksidan -->
 					<div class="col-sm-6 hidden-xs">
 						<?php get_search_form(); ?>
 					</div>
 
+<!-- Container och styling till hamburgaremeny -->
 		            <div class="col-xs-4 text-right visible-xs">
 						<div class="mobile-menu-wrap">
 						    <i class="fa fa-search"></i>
@@ -33,6 +36,7 @@
 			</div>
         </header>
 
+<!-- Dynamisk sökfält som leder till söksidan -->
         <div class="mobile-search">
 		<?php get_search_form(); ?>
         </div>
@@ -42,6 +46,7 @@
 				<div class="row">
 					<div class="col-xs-12">
 
+<!-- Huvudmeny som leder till vissa andra sidor-->
 <?php
 wp_nav_menu(
     array(
@@ -57,6 +62,7 @@ wp_nav_menu(
 			</div>
 		</nav>
 
+<!-- Öppnar main och divvar som stängs i footer		 -->
 <main>
 	<section>
 		<div class="container">

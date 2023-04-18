@@ -1,6 +1,7 @@
-<?php
-  get_header();
-?>
+<!-- Mallsida till Undersida 2
+Innehåll: titel, text, sidomeny till vänster-->
+
+<?php get_header(); ?>
 		<main>
 			<section>
 				<div class="container">
@@ -26,7 +27,5 @@ wp_nav_menu(
 			</section>
 		</main>
 			
-<?php
-get_footer();
-?>
+<?php get_footer(); ?>
 	

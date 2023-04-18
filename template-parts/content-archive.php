@@ -1,3 +1,5 @@
+<!-- Mallfil till arkiv sidan
+     Innehåller bild, titel, datum, författare med länk, kategori, excerpt -->
 
 <article>
     <img src="<?php the_post_thumbnail_url(); ?>" />

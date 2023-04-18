@@ -1,6 +1,6 @@
-<?php
-  get_header();
-?>
+<!-- Generell mall till sidor, om man vill lägga till nya-->
+
+<?php get_header(); ?>
 
 <?php
      if( have_posts() ){
@@ -14,6 +14,4 @@
 	 }
 	 ?>
 						
-<?php
-get_footer();
-?>
+<?php get_footer(); ?>
