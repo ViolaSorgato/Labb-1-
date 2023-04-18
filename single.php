@@ -1,25 +1,20 @@
-<?php
-  get_header();
-?>
+<!-- Sidan som visar en singel inlägg -->
+
+<?php get_header(); ?>
 
 <main>
 	<section>
 		<div class="container">
 			<div class="row">
 				<div id="primary" class="col-xs-12 col-md-9">
-<?php
-     if( have_posts() ){
 
-		while( have_posts() ){
+<!-- Loopar genom innehåll -->	
+    <?php if( have_posts() ) : while( have_posts() )  :  the_post(); ?>
+    <?php get_template_part('template-parts/content', 'article'); ?>
+    <?php endwhile; endif; ?>
+	</div>
 
-			the_post();
-			
-            get_template_part('template-parts/content', 'article');
-		}
-
-	 }
-?>		
-                </div>
+<!-- Sidebar med widgetar -->
 				<aside id="secondary" class="col-xs-12 col-md-3">
 				    <div id="sidebar">
 					<ul>
@@ -35,6 +30,4 @@
                     </div>
                 </aside>
 						
-<?php
-get_footer();
-?>
+<?php get_footer(); ?>
