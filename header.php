@@ -19,7 +19,7 @@
 				<div class="row">
 					<div class="col-xs-8 col-sm-6">
 
-						<a class="logo" href="index.html">Labb 1</a>
+					<a class="logo" href="<?php echo home_url(); ?>"><?php bloginfo('name'); ?></a>
 					</div>
 					<div class="col-sm-6 hidden-xs">
 
@@ -53,3 +53,7 @@ wp_nav_menu(
 				</div>
 			</div>
 		</nav>
+<main>
+	<section>
+		<div class="container">
+			<div class="row">

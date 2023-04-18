@@ -2,14 +2,11 @@
   get_header();
 ?>
 
-<main>
-			<section>
-				<div class="container">
-					<div class="row">
-						<div class="col-xs-12">
-							<div class="hero">
-								<?php the_post_thumbnail(); ?>
-								<div class="text">
+
+<div class="col-xs-12">
+	<div class="hero">
+		<?php the_post_thumbnail(); ?>
+			<div class="text">
 
 								
 <?php
@@ -24,15 +21,10 @@
 
 	 }
 	 ?>
-                              </div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</section>
-		</main>
-
-				
+        </div>
+	</div>
+</div>
+			
 								
 <?php
 get_footer();
