@@ -11,13 +11,39 @@ add_action('after_setup_theme', 'labb1viola_theme_support');
 function labb1_sidebars() {
 
     register_sidebar(array(
-        'name' => 'Sidebarwidget',
+        'name' => 'Sidebar-sök',
         'description' => 'A simple sidebar',
-        'id' => 'sidebarwidget',
-        'class' => 'navigation',
+        'id' => 'sidebar-sök',
+        'class' => 'searchform',
         'before_widget' => '',
         'after_widget' => '',
+    ));
 
+    register_sidebar(array(
+        'name' => 'Sidebar-sidor',
+        'description' => 'A simple sidebar',
+        'id' => 'sidebar-sidor',
+        'class' => 'navigation',
+        'before_widget' =>'<li>',
+        'after_widget' => '</li>'
+    ));
+
+    register_sidebar(array(
+        'name' => 'Sidebar-arkiv',
+        'description' => 'A simple sidebar',
+        'id' => 'sidebar-arkiv',
+        'class' => 'navigation',
+        'before_widget' => '<li>',
+        'after_widget' => '</li>'
+    ));
+
+    register_sidebar(array(
+        'name' => 'Sidebar-kategorier',
+        'description' => 'A simple sidebar',
+        'id' => 'sidebar-kategorier',
+        'class' => 'navigation',
+        'before_widget' => '<li>',
+        'after_widget' => '</li>'
     ));
 
     register_sidebar( array(

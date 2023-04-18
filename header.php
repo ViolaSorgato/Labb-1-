@@ -51,12 +51,12 @@ wp_nav_menu(
         'items-wrap' => '<ul id="" class="menu">€3$s</ul>'
     )
     );
-
 ?>
 					</div>
 				</div>
 			</div>
 		</nav>
+
 <main>
 	<section>
 		<div class="container">
