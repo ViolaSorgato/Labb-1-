@@ -8,11 +8,10 @@
 					<div class="row">
 						<div class="col-xs-12">
 							<div class="hero">
-								<img src="<?php the_post_thumbnail(); ?>" />
+								<?php the_post_thumbnail(); ?>
 								<div class="text">
 
 								
-<!-- VAR LÄGGER JAG TILL DETTA? <h1>Hej och välkommen!</h1> -->
 <?php
      if( have_posts() ){
 

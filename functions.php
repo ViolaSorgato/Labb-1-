@@ -14,16 +14,34 @@ function labb1_sidebars() {
         'name' => 'Sidebarwidget',
         'description' => 'A simple sidebar',
         'id' => 'sidebarwidget',
-        'before-title' => '<h2>',
-        'after-title' => '</h2>'
+        'class' => 'navigation',
+        'before_widget' => '',
+        'after_widget' => '',
+
     ));
 
     register_sidebar( array(
-        'name' => 'Footerwidget',
-        'description' => 'Widget for footer',
-        'id' => 'footerwidget',
-        'before-title' => '<h2>',
-        'after-title' => '</h2>'
+        'name' => 'Footer1',
+        'description' => 'Left widget in the footer',
+        'id' => 'footer1',
+        'before_widget' => '',
+        'after_widget' => ''
+    ));
+
+    register_sidebar( array(
+        'name' => 'Footer2',
+        'description' => 'Center widget in the footer',
+        'id' => 'footer2',
+        'before_widget' => '',
+        'after_widget' => ''
+    ));
+
+    register_sidebar( array(
+        'name' => 'Footer3',
+        'description' => 'Right widget in the footer',
+        'id' => 'footer3',
+        'before_widget' => '',
+        'after_widget' => ''
     ));
 }
 
@@ -66,8 +84,5 @@ function viola_register_scripts() {
 }
 
 add_action( 'wp_enqueue_scripts', 'viola_register_scripts');
-
-
-
 
 ?>

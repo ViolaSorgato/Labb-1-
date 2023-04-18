@@ -10,14 +10,14 @@
 						<p><?php the_content(); ?></p>
 						</div>
 						<div class="col-xs-12 col-sm-4 col-md-6">
-						<?php the_post_thumbnail('full'); ?>
+						<?php the_post_thumbnail(); ?>
 						</div>
 					</div>
 				</div>
 			</section>
 		</main>
 			
-		
+
 <?php
 get_footer();
 ?>
